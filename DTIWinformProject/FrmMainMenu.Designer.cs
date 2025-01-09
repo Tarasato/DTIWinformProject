@@ -203,6 +203,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "FrmMainMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "หน้าจอหลัก-DTI Soft V.1.0";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

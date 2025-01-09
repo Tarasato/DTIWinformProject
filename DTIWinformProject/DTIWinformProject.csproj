@@ -108,11 +108,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmCalculator.resx">
+      <DependentUpon>FrmCalculator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLotto.resx">
+      <DependentUpon>FrmLotto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSAUShop.resx">
+      <DependentUpon>FrmSAUShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmWelcome.resx">
       <DependentUpon>FrmWelcome.cs</DependentUpon>
@@ -175,6 +184,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\exitapp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pevious1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculator2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
