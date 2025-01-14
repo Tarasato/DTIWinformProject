@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace DTIWinformProject
 {
-    public partial class FrmSAURegister : Form
+    public partial class FrmSAURegisterResult : Form
     {
-        public FrmSAURegister()
+        public FrmSAURegisterResult()
         {
             InitializeComponent();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

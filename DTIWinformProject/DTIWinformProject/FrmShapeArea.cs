@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DTIWinformProject
 {
-    public partial class FrmSAURegisterResult : Form
+    public partial class FrmShapeArea : Form
     {
-        public FrmSAURegisterResult()
+        public FrmShapeArea()
         {
             InitializeComponent();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

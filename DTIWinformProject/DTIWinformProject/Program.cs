@@ -16,7 +16,7 @@ namespace DTIWinformProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLotto());
+            Application.Run(new FrmSAURegister());
         }
     }
 }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DTIWinformProject
 {
-    public partial class FrmShapeArea : Form
+    public partial class FrmDooDung : Form
     {
-        public FrmShapeArea()
+        public FrmDooDung()
         {
             InitializeComponent();
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

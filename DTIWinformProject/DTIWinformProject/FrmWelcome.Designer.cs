@@ -144,7 +144,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(169, 98);
             this.button1.TabIndex = 21;
-            this.button1.Text = "ตกลง";
+            this.button1.Text = "ฉ";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -157,7 +157,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(169, 98);
             this.button2.TabIndex = 20;
-            this.button2.Text = "ยกเลิก";
+            this.button2.Text = "ฉ";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.button2.UseVisualStyleBackColor = true;
             // 
