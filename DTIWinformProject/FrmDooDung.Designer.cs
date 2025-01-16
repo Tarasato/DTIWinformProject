@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.Gb1 = new System.Windows.Forms.GroupBox();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
@@ -57,15 +58,16 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btMainMenu = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.Gb1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
@@ -372,8 +374,8 @@
             // 
             this.toolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
+            this.tslbUsername,
+            this.tslbDateTime});
             this.toolStrip1.Location = new System.Drawing.Point(0, 657);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1178, 25);
@@ -381,22 +383,22 @@
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
             // 
-            // toolStripLabel1
+            // tslbUsername
             // 
-            this.toolStripLabel1.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(43, 22);
-            this.toolStripLabel1.Text = "name?";
-            this.toolStripLabel1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.tslbUsername.BackColor = System.Drawing.SystemColors.Control;
+            this.tslbUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
+            this.tslbUsername.Name = "tslbUsername";
+            this.tslbUsername.Size = new System.Drawing.Size(43, 22);
+            this.tslbUsername.Text = "name?";
+            this.tslbUsername.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             // 
-            // toolStripLabel2
+            // tslbDateTime
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(59, 22);
-            this.toolStripLabel2.Text = "datetime?";
-            this.toolStripLabel2.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.tslbDateTime.Name = "tslbDateTime";
+            this.tslbDateTime.Size = new System.Drawing.Size(59, 22);
+            this.tslbDateTime.Text = "datetime?";
+            this.tslbDateTime.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             // 
             // groupBox2
             // 
@@ -469,18 +471,23 @@
             this.button2.Text = "ใหม่";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btMainMenu
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.Location = new System.Drawing.Point(942, 34);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(224, 86);
-            this.button4.TabIndex = 22;
-            this.button4.Text = "หน้าจอหลัก";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
+            this.btMainMenu.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btMainMenu.Location = new System.Drawing.Point(942, 34);
+            this.btMainMenu.Name = "btMainMenu";
+            this.btMainMenu.Size = new System.Drawing.Size(224, 86);
+            this.btMainMenu.TabIndex = 22;
+            this.btMainMenu.Text = "หน้าจอหลัก";
+            this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btMainMenu.UseVisualStyleBackColor = true;
+            this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FrmDooDung
             // 
@@ -494,12 +501,14 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Gb1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmDooDung";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ดูดวงแม่นๆ - DTI Soft V.1.0";
+            this.Load += new System.EventHandler(this.FrmDooDung_Load);
             this.Gb1.ResumeLayout(false);
             this.Gb1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
@@ -516,7 +525,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox Gb1;
         private System.Windows.Forms.Label label2;
@@ -543,8 +552,8 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel tslbUsername;
+        private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;
@@ -554,5 +563,6 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Timer timer;
     }
 }

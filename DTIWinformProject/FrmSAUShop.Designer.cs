@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmSAUShop));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,14 +62,16 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
+            this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btMainMenu = new System.Windows.Forms.Button();
+            this.timer = new System.Windows.Forms.Timer(this.components);
+            this.label23 = new System.Windows.Forms.Label();
             this.toolStrip2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -126,7 +129,6 @@
             this.checkBox1.TabIndex = 18;
             this.checkBox1.Text = "ปากกา 5 บาท/ด้าม";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -138,7 +140,6 @@
             this.checkBox2.TabIndex = 19;
             this.checkBox2.Text = "ดินสอ 1.5 บาท/ด้าม";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -150,7 +151,6 @@
             this.checkBox3.TabIndex = 20;
             this.checkBox3.Text = "ยางลบ 2.50 บาท/ก้อน";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // checkBox4
             // 
@@ -162,7 +162,6 @@
             this.checkBox4.TabIndex = 21;
             this.checkBox4.Text = "ไม้บรรทัด 2 บาท/อัน";
             this.checkBox4.UseVisualStyleBackColor = true;
-            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
             // 
             // checkBox5
             // 
@@ -174,7 +173,6 @@
             this.checkBox5.TabIndex = 22;
             this.checkBox5.Text = "สมุด 10.25 บาท/เล่ม";
             this.checkBox5.UseVisualStyleBackColor = true;
-            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
             // 
             // textBox1
             // 
@@ -297,7 +295,6 @@
             this.label5.TabIndex = 24;
             this.label5.Text = "0.00";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label12
             // 
@@ -310,7 +307,6 @@
             this.label12.TabIndex = 24;
             this.label12.Text = "0.00";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label12.Click += new System.EventHandler(this.label5_Click);
             // 
             // label13
             // 
@@ -333,7 +329,6 @@
             this.label14.TabIndex = 24;
             this.label14.Text = "0.00";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label14.Click += new System.EventHandler(this.label5_Click);
             // 
             // label15
             // 
@@ -356,7 +351,6 @@
             this.label16.TabIndex = 24;
             this.label16.Text = "0.00";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label16.Click += new System.EventHandler(this.label5_Click);
             // 
             // label17
             // 
@@ -379,7 +373,6 @@
             this.label18.TabIndex = 24;
             this.label18.Text = "0.00";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label18.Click += new System.EventHandler(this.label5_Click);
             // 
             // label19
             // 
@@ -414,8 +407,8 @@
             // 
             this.toolStrip2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripLabel1,
-            this.toolStripLabel2});
+            this.tslbUsername,
+            this.tslbDateTime});
             this.toolStrip2.Location = new System.Drawing.Point(0, 741);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.Size = new System.Drawing.Size(1080, 25);
@@ -423,22 +416,22 @@
             this.toolStrip2.Text = "toolStrip2";
             this.toolStrip2.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
             // 
-            // toolStripLabel1
+            // tslbUsername
             // 
-            this.toolStripLabel1.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripLabel1.ForeColor = System.Drawing.Color.Blue;
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(43, 22);
-            this.toolStripLabel1.Text = "name?";
-            this.toolStripLabel1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.tslbUsername.BackColor = System.Drawing.SystemColors.Control;
+            this.tslbUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
+            this.tslbUsername.Name = "tslbUsername";
+            this.tslbUsername.Size = new System.Drawing.Size(43, 22);
+            this.tslbUsername.Text = "name?";
+            this.tslbUsername.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             // 
-            // toolStripLabel2
+            // tslbDateTime
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(59, 22);
-            this.toolStripLabel2.Text = "datetime?";
-            this.toolStripLabel2.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.tslbDateTime.Name = "tslbDateTime";
+            this.tslbDateTime.Size = new System.Drawing.Size(59, 22);
+            this.tslbDateTime.Text = "datetime?";
+            this.tslbDateTime.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             // 
             // groupBox1
             // 
@@ -474,7 +467,6 @@
             this.label22.TabIndex = 24;
             this.label22.Text = "0.00";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label22.Click += new System.EventHandler(this.label5_Click);
             // 
             // button2
             // 
@@ -488,7 +480,6 @@
             this.button2.Text = "ยกเลิก";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button4_Click);
             // 
             // button1
             // 
@@ -502,21 +493,34 @@
             this.button1.Text = "คำนวณ";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button4
+            // btMainMenu
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Image = global::DTIWinformProject.Properties.Resources.pevious1;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.Location = new System.Drawing.Point(802, 37);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(224, 86);
-            this.button4.TabIndex = 14;
-            this.button4.Text = "หน้าจอหลัก";
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
+            this.btMainMenu.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btMainMenu.Location = new System.Drawing.Point(802, 37);
+            this.btMainMenu.Name = "btMainMenu";
+            this.btMainMenu.Size = new System.Drawing.Size(224, 86);
+            this.btMainMenu.TabIndex = 14;
+            this.btMainMenu.Text = "หน้าจอหลัก";
+            this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btMainMenu.UseVisualStyleBackColor = true;
+            this.btMainMenu.Click += new System.EventHandler(this.btMainMenu_Click);
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(682, 479);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(41, 24);
+            this.label23.TabIndex = 24;
+            this.label23.Text = "บาท";
             // 
             // FrmSAUShop
             // 
@@ -533,6 +537,7 @@
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label19);
+            this.Controls.Add(this.label23);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
@@ -554,7 +559,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btMainMenu);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -574,7 +579,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btMainMenu;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -607,12 +612,14 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ToolStrip toolStrip2;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.ToolStripLabel tslbUsername;
+        private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.Label label23;
     }
 }

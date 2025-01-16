@@ -58,6 +58,14 @@ namespace DTIWinformProject
                 }
                 else {
                     // if username and password are correct go to main form
+                    ShareData.LoginName = tbUsername.Text.Trim();
+                    if (rdStudent.Checked)
+                    {
+                        ShareData.LoginType = "Student";
+                    }
+                    else{
+                        ShareData.LoginType = "Teacher";
+                    }
                     FrmMainMenu frmMainMenu = new FrmMainMenu();
                     frmMainMenu.Show();
                     Hide(); //ปิดหน้าจอปัจจุบัน

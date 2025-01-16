@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "E:\\Work\\Codes\\632304\\mycsproject\\DTIWinformProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{36A4ECBA-8DDC-4DB1-8625-5205CB1A1761}|DTIWinformProject\\DTIWinformProject.csproj|e:\\work\\codes\\632304\\mycsproject\\dtiwinformproject\\dtiwinformproject\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{36A4ECBA-8DDC-4DB1-8625-5205CB1A1761}|DTIWinformProject\\DTIWinformProject.csproj|solutionrelative:dtiwinformproject\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{36A4ECBA-8DDC-4DB1-8625-5205CB1A1761}|DTIWinformProject\\DTIWinformProject.csproj|e:\\work\\codes\\632304\\mycsproject\\dtiwinformproject\\dtiwinformproject\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{36A4ECBA-8DDC-4DB1-8625-5205CB1A1761}|DTIWinformProject\\DTIWinformProject.csproj|solutionrelative:dtiwinformproject\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36A4ECBA-8DDC-4DB1-8625-5205CB1A1761}|DTIWinformProject\\DTIWinformProject.csproj|e:\\work\\codes\\632304\\mycsproject\\dtiwinformproject\\dtiwinformproject\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{36A4ECBA-8DDC-4DB1-8625-5205CB1A1761}|DTIWinformProject\\DTIWinformProject.csproj|solutionrelative:dtiwinformproject\\frmmainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +23,29 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmLogin.cs [Design]",
-              "DocumentMoniker": "E:\\Work\\Codes\\632304\\mycsproject\\DTIWinformProject\\DTIWinformProject\\FrmLogin.cs",
-              "RelativeDocumentMoniker": "DTIWinformProject\\FrmLogin.cs",
-              "ToolTip": "E:\\Work\\Codes\\632304\\mycsproject\\DTIWinformProject\\DTIWinformProject\\FrmLogin.cs [Design]",
-              "RelativeToolTip": "DTIWinformProject\\FrmLogin.cs [Design]",
+              "Title": "FrmMainMenu.cs [Design]",
+              "DocumentMoniker": "E:\\Work\\Codes\\632304\\mycsproject\\DTIWinformProject\\DTIWinformProject\\FrmMainMenu.cs",
+              "RelativeDocumentMoniker": "DTIWinformProject\\FrmMainMenu.cs",
+              "ToolTip": "E:\\Work\\Codes\\632304\\mycsproject\\DTIWinformProject\\DTIWinformProject\\FrmMainMenu.cs [Design]",
+              "RelativeToolTip": "DTIWinformProject\\FrmMainMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T03:42:31.521Z",
+              "WhenOpened": "2025-01-16T04:42:21.364Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmMainMenu.cs",
+              "DocumentMoniker": "E:\\Work\\Codes\\632304\\mycsproject\\DTIWinformProject\\DTIWinformProject\\FrmMainMenu.cs",
+              "RelativeDocumentMoniker": "DTIWinformProject\\FrmMainMenu.cs",
+              "ToolTip": "E:\\Work\\Codes\\632304\\mycsproject\\DTIWinformProject\\DTIWinformProject\\FrmMainMenu.cs",
+              "RelativeToolTip": "DTIWinformProject\\FrmMainMenu.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAEwCMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T04:54:54.534Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             }
           ]
         }
