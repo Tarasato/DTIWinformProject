@@ -16,5 +16,19 @@ namespace DTIWinformProject
         {
             MessageBox.Show(msg, "คำเตือน", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
+        public static void keyNumberAndDotOnly(object sender, KeyPressEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+            {
+                e.Handled = true;
+            }
+
+            if (e.KeyChar == '.' && textBox.Text.Contains('.'))
+            {
+                e.Handled = true;
+            }
+        }
     }
     }

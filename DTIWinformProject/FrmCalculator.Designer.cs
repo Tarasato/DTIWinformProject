@@ -55,20 +55,18 @@
             // 
             this.tbNum1.AccessibleDescription = "";
             this.tbNum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNum1.Location = new System.Drawing.Point(375, 196);
-            this.tbNum1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNum1.Location = new System.Drawing.Point(281, 159);
             this.tbNum1.Name = "tbNum1";
-            this.tbNum1.Size = new System.Drawing.Size(551, 34);
+            this.tbNum1.Size = new System.Drawing.Size(414, 29);
             this.tbNum1.TabIndex = 22;
             this.tbNum1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNum1_KeyPress);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(221, 196);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(166, 159);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 28);
+            this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 21;
             this.label2.Text = "ป้อนตัวเลข";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -78,10 +76,9 @@
             this.btMainMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMainMenu.Image = global::DTIWinformProject.Properties.Resources.pevious1;
             this.btMainMenu.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btMainMenu.Location = new System.Drawing.Point(1081, 38);
-            this.btMainMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btMainMenu.Location = new System.Drawing.Point(811, 31);
             this.btMainMenu.Name = "btMainMenu";
-            this.btMainMenu.Size = new System.Drawing.Size(299, 106);
+            this.btMainMenu.Size = new System.Drawing.Size(224, 86);
             this.btMainMenu.TabIndex = 20;
             this.btMainMenu.Text = "หน้าจอหลัก";
             this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -93,10 +90,9 @@
             this.label1.BackColor = System.Drawing.Color.Yellow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(68, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(51, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(981, 106);
+            this.label1.Size = new System.Drawing.Size(736, 86);
             this.label1.TabIndex = 19;
             this.label1.Text = "Calculator";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,20 +101,19 @@
             // 
             this.tbNum2.AccessibleDescription = "";
             this.tbNum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbNum2.Location = new System.Drawing.Point(375, 263);
-            this.tbNum2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNum2.Location = new System.Drawing.Point(281, 214);
             this.tbNum2.Name = "tbNum2";
-            this.tbNum2.Size = new System.Drawing.Size(551, 34);
+            this.tbNum2.Size = new System.Drawing.Size(414, 29);
             this.tbNum2.TabIndex = 24;
+            this.tbNum2.TextChanged += new System.EventHandler(this.tbNum2_TextChanged);
             this.tbNum2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNum2_KeyPress);
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(221, 263);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(166, 214);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 28);
+            this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 23;
             this.label3.Text = "ป้อนตัวเลข";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -128,10 +123,9 @@
             this.btPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPlus.ForeColor = System.Drawing.Color.Blue;
             this.btPlus.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btPlus.Location = new System.Drawing.Point(88, 366);
-            this.btPlus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btPlus.Location = new System.Drawing.Point(66, 297);
             this.btPlus.Name = "btPlus";
-            this.btPlus.Size = new System.Drawing.Size(153, 132);
+            this.btPlus.Size = new System.Drawing.Size(115, 107);
             this.btPlus.TabIndex = 25;
             this.btPlus.Text = "+";
             this.btPlus.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -143,10 +137,9 @@
             this.btMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMinus.ForeColor = System.Drawing.Color.Blue;
             this.btMinus.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btMinus.Location = new System.Drawing.Point(292, 366);
-            this.btMinus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btMinus.Location = new System.Drawing.Point(219, 297);
             this.btMinus.Name = "btMinus";
-            this.btMinus.Size = new System.Drawing.Size(153, 132);
+            this.btMinus.Size = new System.Drawing.Size(115, 107);
             this.btMinus.TabIndex = 26;
             this.btMinus.Text = "-";
             this.btMinus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -158,10 +151,9 @@
             this.btMultiply.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btMultiply.ForeColor = System.Drawing.Color.Blue;
             this.btMultiply.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btMultiply.Location = new System.Drawing.Point(496, 366);
-            this.btMultiply.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btMultiply.Location = new System.Drawing.Point(372, 297);
             this.btMultiply.Name = "btMultiply";
-            this.btMultiply.Size = new System.Drawing.Size(153, 132);
+            this.btMultiply.Size = new System.Drawing.Size(115, 107);
             this.btMultiply.TabIndex = 27;
             this.btMultiply.Text = "X";
             this.btMultiply.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -174,10 +166,9 @@
             this.btDevide.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDevide.ForeColor = System.Drawing.Color.Blue;
             this.btDevide.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btDevide.Location = new System.Drawing.Point(700, 366);
-            this.btDevide.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btDevide.Location = new System.Drawing.Point(525, 297);
             this.btDevide.Name = "btDevide";
-            this.btDevide.Size = new System.Drawing.Size(153, 132);
+            this.btDevide.Size = new System.Drawing.Size(115, 107);
             this.btDevide.TabIndex = 28;
             this.btDevide.Text = "÷";
             this.btDevide.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -188,10 +179,9 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(103, 703);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(77, 571);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 46);
+            this.label4.Size = new System.Drawing.Size(100, 37);
             this.label4.TabIndex = 29;
             this.label4.Text = "ผลลัพธ์";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -201,10 +191,9 @@
             this.lbShowResult.BackColor = System.Drawing.Color.Yellow;
             this.lbShowResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbShowResult.ForeColor = System.Drawing.Color.Red;
-            this.lbShowResult.Location = new System.Drawing.Point(284, 672);
-            this.lbShowResult.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbShowResult.Location = new System.Drawing.Point(213, 546);
             this.lbShowResult.Name = "lbShowResult";
-            this.lbShowResult.Size = new System.Drawing.Size(765, 106);
+            this.lbShowResult.Size = new System.Drawing.Size(574, 86);
             this.lbShowResult.TabIndex = 30;
             this.lbShowResult.Text = "???";
             this.lbShowResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,10 +202,9 @@
             // 
             this.btPow.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btPow.ForeColor = System.Drawing.Color.Blue;
-            this.btPow.Location = new System.Drawing.Point(904, 366);
-            this.btPow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btPow.Location = new System.Drawing.Point(678, 297);
             this.btPow.Name = "btPow";
-            this.btPow.Size = new System.Drawing.Size(153, 132);
+            this.btPow.Size = new System.Drawing.Size(115, 107);
             this.btPow.TabIndex = 31;
             this.btPow.Text = "^";
             this.btPow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -232,10 +220,9 @@
             "ทศนิยม 2 ตำแหน่ง",
             "ทศนิยม 4 ตำแหน่ง",
             "ทศนิยม 8 ตำแหน่ง"});
-            this.cbbDecimal.Location = new System.Drawing.Point(375, 574);
-            this.cbbDecimal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbbDecimal.Location = new System.Drawing.Point(281, 466);
             this.cbbDecimal.Name = "cbbDecimal";
-            this.cbbDecimal.Size = new System.Drawing.Size(551, 37);
+            this.cbbDecimal.Size = new System.Drawing.Size(414, 32);
             this.cbbDecimal.TabIndex = 32;
             this.cbbDecimal.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbbDecimal_KeyPress);
             // 
@@ -246,9 +233,9 @@
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tslbUsername,
             this.tslbDateTime});
-            this.toolStrip2.Location = new System.Drawing.Point(0, 847);
+            this.toolStrip2.Location = new System.Drawing.Point(0, 688);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(1469, 31);
+            this.toolStrip2.Size = new System.Drawing.Size(1102, 25);
             this.toolStrip2.TabIndex = 33;
             this.toolStrip2.Text = "toolStrip2";
             this.toolStrip2.TextDirection = System.Windows.Forms.ToolStripTextDirection.Vertical90;
@@ -259,14 +246,14 @@
             this.tslbUsername.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tslbUsername.ForeColor = System.Drawing.Color.Blue;
             this.tslbUsername.Name = "tslbUsername";
-            this.tslbUsername.Size = new System.Drawing.Size(55, 28);
+            this.tslbUsername.Size = new System.Drawing.Size(43, 22);
             this.tslbUsername.Text = "name?";
             this.tslbUsername.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             // 
             // tslbDateTime
             // 
             this.tslbDateTime.Name = "tslbDateTime";
-            this.tslbDateTime.Size = new System.Drawing.Size(76, 28);
+            this.tslbDateTime.Size = new System.Drawing.Size(59, 22);
             this.tslbDateTime.Text = "datetime?";
             this.tslbDateTime.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             // 
@@ -276,9 +263,9 @@
             // 
             // FrmCalculator
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1469, 878);
+            this.ClientSize = new System.Drawing.Size(1102, 713);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.cbbDecimal);
             this.Controls.Add(this.btPow);
@@ -296,7 +283,6 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "FrmCalculator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

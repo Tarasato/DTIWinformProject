@@ -37,35 +37,35 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btCalcel = new System.Windows.Forms.Button();
+            this.btCircleCal = new System.Windows.Forms.Button();
+            this.rdCircleRound = new System.Windows.Forms.RadioButton();
+            this.rdCircleArea = new System.Windows.Forms.RadioButton();
+            this.lbCircleShow = new System.Windows.Forms.Label();
+            this.tbRadius = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btRectCancel = new System.Windows.Forms.Button();
+            this.btRectCal = new System.Windows.Forms.Button();
+            this.rdRectRound = new System.Windows.Forms.RadioButton();
+            this.rdRectArea = new System.Windows.Forms.RadioButton();
+            this.lbRectShow = new System.Windows.Forms.Label();
+            this.tbRectHeight = new System.Windows.Forms.TextBox();
+            this.tbWidth = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.btTriCancel = new System.Windows.Forms.Button();
+            this.btTriCal = new System.Windows.Forms.Button();
+            this.rdTriRound = new System.Windows.Forms.RadioButton();
+            this.rdTriArea = new System.Windows.Forms.RadioButton();
+            this.lbTriShow = new System.Windows.Forms.Label();
+            this.tbSideAngle = new System.Windows.Forms.TextBox();
+            this.tbTriHeight = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbBase = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -147,12 +147,12 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Controls.Add(this.radioButton2);
-            this.tabPage1.Controls.Add(this.radioButton1);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.textBox1);
+            this.tabPage1.Controls.Add(this.btCalcel);
+            this.tabPage1.Controls.Add(this.btCircleCal);
+            this.tabPage1.Controls.Add(this.rdCircleRound);
+            this.tabPage1.Controls.Add(this.rdCircleArea);
+            this.tabPage1.Controls.Add(this.lbCircleShow);
+            this.tabPage1.Controls.Add(this.tbRadius);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
@@ -164,77 +164,80 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
-            // button2
+            // btCalcel
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::DTIWinformProject.Properties.Resources.cancel1;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(796, 165);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(152, 86);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "ยกเลิก";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btCalcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCalcel.Image = global::DTIWinformProject.Properties.Resources.cancel1;
+            this.btCalcel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCalcel.Location = new System.Drawing.Point(796, 165);
+            this.btCalcel.Name = "btCalcel";
+            this.btCalcel.Size = new System.Drawing.Size(152, 86);
+            this.btCalcel.TabIndex = 31;
+            this.btCalcel.Text = "ยกเลิก";
+            this.btCalcel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCalcel.UseVisualStyleBackColor = true;
+            this.btCalcel.Click += new System.EventHandler(this.btCalcel_Click);
             // 
-            // button1
+            // btCircleCal
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::DTIWinformProject.Properties.Resources.calculator2;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(796, 73);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 86);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "คำนวณ";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btCircleCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCircleCal.Image = global::DTIWinformProject.Properties.Resources.calculator2;
+            this.btCircleCal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCircleCal.Location = new System.Drawing.Point(796, 73);
+            this.btCircleCal.Name = "btCircleCal";
+            this.btCircleCal.Size = new System.Drawing.Size(152, 86);
+            this.btCircleCal.TabIndex = 32;
+            this.btCircleCal.Text = "คำนวณ";
+            this.btCircleCal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCircleCal.UseVisualStyleBackColor = true;
+            this.btCircleCal.Click += new System.EventHandler(this.btCircleCal_Click);
             // 
-            // radioButton2
+            // rdCircleRound
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton2.Location = new System.Drawing.Point(55, 172);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(115, 24);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Tag = "1";
-            this.radioButton2.Text = "เส้นรอบวงกลม";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdCircleRound.AutoSize = true;
+            this.rdCircleRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.rdCircleRound.Location = new System.Drawing.Point(55, 172);
+            this.rdCircleRound.Name = "rdCircleRound";
+            this.rdCircleRound.Size = new System.Drawing.Size(115, 24);
+            this.rdCircleRound.TabIndex = 2;
+            this.rdCircleRound.TabStop = true;
+            this.rdCircleRound.Tag = "1";
+            this.rdCircleRound.Text = "เส้นรอบวงกลม";
+            this.rdCircleRound.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdCircleArea
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton1.Location = new System.Drawing.Point(55, 135);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(107, 24);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Tag = "1";
-            this.radioButton1.Text = "พื้นที่ทรงกลม";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdCircleArea.AutoSize = true;
+            this.rdCircleArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.rdCircleArea.Location = new System.Drawing.Point(55, 135);
+            this.rdCircleArea.Name = "rdCircleArea";
+            this.rdCircleArea.Size = new System.Drawing.Size(107, 24);
+            this.rdCircleArea.TabIndex = 2;
+            this.rdCircleArea.TabStop = true;
+            this.rdCircleArea.Tag = "1";
+            this.rdCircleArea.Text = "พื้นที่ทรงกลม";
+            this.rdCircleArea.UseVisualStyleBackColor = true;
             // 
-            // label4
+            // lbCircleShow
             // 
-            this.label4.BackColor = System.Drawing.Color.Yellow;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Red;
-            this.label4.Location = new System.Drawing.Point(49, 253);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(736, 51);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "0.00";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbCircleShow.BackColor = System.Drawing.Color.Yellow;
+            this.lbCircleShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCircleShow.ForeColor = System.Drawing.Color.Red;
+            this.lbCircleShow.Location = new System.Drawing.Point(49, 253);
+            this.lbCircleShow.Name = "lbCircleShow";
+            this.lbCircleShow.Size = new System.Drawing.Size(736, 51);
+            this.lbCircleShow.TabIndex = 30;
+            this.lbCircleShow.Text = "0.00";
+            this.lbCircleShow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // tbRadius
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox1.Location = new System.Drawing.Point(55, 75);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(162, 29);
-            this.textBox1.TabIndex = 1;
+            this.tbRadius.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbRadius.Location = new System.Drawing.Point(55, 75);
+            this.tbRadius.Name = "tbRadius";
+            this.tbRadius.Size = new System.Drawing.Size(162, 29);
+            this.tbRadius.TabIndex = 1;
+            this.tbRadius.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRadius_KeyPress);
             // 
             // label3
             // 
@@ -258,13 +261,13 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.button3);
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Controls.Add(this.radioButton3);
-            this.tabPage2.Controls.Add(this.radioButton4);
-            this.tabPage2.Controls.Add(this.label5);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.btRectCancel);
+            this.tabPage2.Controls.Add(this.btRectCal);
+            this.tabPage2.Controls.Add(this.rdRectRound);
+            this.tabPage2.Controls.Add(this.rdRectArea);
+            this.tabPage2.Controls.Add(this.lbRectShow);
+            this.tabPage2.Controls.Add(this.tbRectHeight);
+            this.tabPage2.Controls.Add(this.tbWidth);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Controls.Add(this.label7);
@@ -276,85 +279,89 @@
             this.tabPage2.Text = "สี่เหลี่ยม";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btRectCancel
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Image = global::DTIWinformProject.Properties.Resources.cancel1;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(786, 158);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(152, 86);
-            this.button3.TabIndex = 39;
-            this.button3.Text = "ยกเลิก";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btRectCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRectCancel.Image = global::DTIWinformProject.Properties.Resources.cancel1;
+            this.btRectCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btRectCancel.Location = new System.Drawing.Point(786, 158);
+            this.btRectCancel.Name = "btRectCancel";
+            this.btRectCancel.Size = new System.Drawing.Size(152, 86);
+            this.btRectCancel.TabIndex = 39;
+            this.btRectCancel.Text = "ยกเลิก";
+            this.btRectCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btRectCancel.UseVisualStyleBackColor = true;
+            this.btRectCancel.Click += new System.EventHandler(this.btRectCancel_Click);
             // 
-            // button5
+            // btRectCal
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Image = global::DTIWinformProject.Properties.Resources.calculator2;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(786, 66);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(152, 86);
-            this.button5.TabIndex = 40;
-            this.button5.Text = "คำนวณ";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btRectCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btRectCal.Image = global::DTIWinformProject.Properties.Resources.calculator2;
+            this.btRectCal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btRectCal.Location = new System.Drawing.Point(786, 66);
+            this.btRectCal.Name = "btRectCal";
+            this.btRectCal.Size = new System.Drawing.Size(152, 86);
+            this.btRectCal.TabIndex = 40;
+            this.btRectCal.Text = "คำนวณ";
+            this.btRectCal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btRectCal.UseVisualStyleBackColor = true;
+            this.btRectCal.Click += new System.EventHandler(this.btRectCal_Click);
             // 
-            // radioButton3
+            // rdRectRound
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton3.Location = new System.Drawing.Point(42, 165);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(123, 24);
-            this.radioButton3.TabIndex = 36;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Tag = "1";
-            this.radioButton3.Text = "เส้นรอบสี่เหลี่ยม";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdRectRound.AutoSize = true;
+            this.rdRectRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.rdRectRound.Location = new System.Drawing.Point(42, 165);
+            this.rdRectRound.Name = "rdRectRound";
+            this.rdRectRound.Size = new System.Drawing.Size(123, 24);
+            this.rdRectRound.TabIndex = 36;
+            this.rdRectRound.TabStop = true;
+            this.rdRectRound.Tag = "1";
+            this.rdRectRound.Text = "เส้นรอบสี่เหลี่ยม";
+            this.rdRectRound.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rdRectArea
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton4.Location = new System.Drawing.Point(42, 128);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(105, 24);
-            this.radioButton4.TabIndex = 37;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Tag = "1";
-            this.radioButton4.Text = "พื้นที่สี่เหลี่ยม";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdRectArea.AutoSize = true;
+            this.rdRectArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.rdRectArea.Location = new System.Drawing.Point(42, 128);
+            this.rdRectArea.Name = "rdRectArea";
+            this.rdRectArea.Size = new System.Drawing.Size(105, 24);
+            this.rdRectArea.TabIndex = 37;
+            this.rdRectArea.TabStop = true;
+            this.rdRectArea.Tag = "1";
+            this.rdRectArea.Text = "พื้นที่สี่เหลี่ยม";
+            this.rdRectArea.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // lbRectShow
             // 
-            this.label5.BackColor = System.Drawing.Color.Yellow;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(36, 246);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(736, 51);
-            this.label5.TabIndex = 38;
-            this.label5.Text = "0.00";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbRectShow.BackColor = System.Drawing.Color.Yellow;
+            this.lbRectShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRectShow.ForeColor = System.Drawing.Color.Red;
+            this.lbRectShow.Location = new System.Drawing.Point(36, 246);
+            this.lbRectShow.Name = "lbRectShow";
+            this.lbRectShow.Size = new System.Drawing.Size(736, 51);
+            this.lbRectShow.TabIndex = 38;
+            this.lbRectShow.Text = "0.00";
+            this.lbRectShow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox3
+            // tbRectHeight
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox3.Location = new System.Drawing.Point(319, 68);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(162, 29);
-            this.textBox3.TabIndex = 35;
+            this.tbRectHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbRectHeight.Location = new System.Drawing.Point(319, 68);
+            this.tbRectHeight.Name = "tbRectHeight";
+            this.tbRectHeight.Size = new System.Drawing.Size(162, 29);
+            this.tbRectHeight.TabIndex = 35;
+            this.tbRectHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRadius_KeyPress);
             // 
-            // textBox2
+            // tbWidth
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox2.Location = new System.Drawing.Point(42, 68);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(162, 29);
-            this.textBox2.TabIndex = 35;
+            this.tbWidth.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbWidth.Location = new System.Drawing.Point(42, 68);
+            this.tbWidth.Name = "tbWidth";
+            this.tbWidth.Size = new System.Drawing.Size(162, 29);
+            this.tbWidth.TabIndex = 35;
+            this.tbWidth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRadius_KeyPress);
             // 
             // label6
             // 
@@ -388,15 +395,15 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.button7);
-            this.tabPage3.Controls.Add(this.radioButton5);
-            this.tabPage3.Controls.Add(this.radioButton6);
-            this.tabPage3.Controls.Add(this.label9);
-            this.tabPage3.Controls.Add(this.textBox6);
-            this.tabPage3.Controls.Add(this.textBox5);
+            this.tabPage3.Controls.Add(this.btTriCancel);
+            this.tabPage3.Controls.Add(this.btTriCal);
+            this.tabPage3.Controls.Add(this.rdTriRound);
+            this.tabPage3.Controls.Add(this.rdTriArea);
+            this.tabPage3.Controls.Add(this.lbTriShow);
+            this.tabPage3.Controls.Add(this.tbSideAngle);
+            this.tabPage3.Controls.Add(this.tbTriHeight);
             this.tabPage3.Controls.Add(this.label13);
-            this.tabPage3.Controls.Add(this.textBox4);
+            this.tabPage3.Controls.Add(this.tbBase);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label11);
@@ -407,85 +414,88 @@
             this.tabPage3.Text = "สามเหลี่ยมมุมฉาก";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btTriCancel
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = global::DTIWinformProject.Properties.Resources.cancel1;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button6.Location = new System.Drawing.Point(787, 158);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(152, 86);
-            this.button6.TabIndex = 39;
-            this.button6.Text = "ยกเลิก";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btTriCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTriCancel.Image = global::DTIWinformProject.Properties.Resources.cancel1;
+            this.btTriCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btTriCancel.Location = new System.Drawing.Point(787, 158);
+            this.btTriCancel.Name = "btTriCancel";
+            this.btTriCancel.Size = new System.Drawing.Size(152, 86);
+            this.btTriCancel.TabIndex = 39;
+            this.btTriCancel.Text = "ยกเลิก";
+            this.btTriCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btTriCancel.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btTriCal
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Image = global::DTIWinformProject.Properties.Resources.calculator2;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button7.Location = new System.Drawing.Point(787, 66);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(152, 86);
-            this.button7.TabIndex = 40;
-            this.button7.Text = "คำนวณ";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btTriCal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTriCal.Image = global::DTIWinformProject.Properties.Resources.calculator2;
+            this.btTriCal.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btTriCal.Location = new System.Drawing.Point(787, 66);
+            this.btTriCal.Name = "btTriCal";
+            this.btTriCal.Size = new System.Drawing.Size(152, 86);
+            this.btTriCal.TabIndex = 40;
+            this.btTriCal.Text = "คำนวณ";
+            this.btTriCal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btTriCal.UseVisualStyleBackColor = true;
+            this.btTriCal.Click += new System.EventHandler(this.btTriCal_Click);
             // 
-            // radioButton5
+            // rdTriRound
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton5.Location = new System.Drawing.Point(42, 165);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(140, 24);
-            this.radioButton5.TabIndex = 36;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Tag = "1";
-            this.radioButton5.Text = "เส้นรอบสามเหลี่ยม";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rdTriRound.AutoSize = true;
+            this.rdTriRound.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.rdTriRound.Location = new System.Drawing.Point(42, 165);
+            this.rdTriRound.Name = "rdTriRound";
+            this.rdTriRound.Size = new System.Drawing.Size(140, 24);
+            this.rdTriRound.TabIndex = 36;
+            this.rdTriRound.TabStop = true;
+            this.rdTriRound.Tag = "1";
+            this.rdTriRound.Text = "เส้นรอบสามเหลี่ยม";
+            this.rdTriRound.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rdTriArea
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.radioButton6.Location = new System.Drawing.Point(42, 128);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(122, 24);
-            this.radioButton6.TabIndex = 37;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Tag = "1";
-            this.radioButton6.Text = "พื้นที่สามเหลี่ยม";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rdTriArea.AutoSize = true;
+            this.rdTriArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.rdTriArea.Location = new System.Drawing.Point(42, 128);
+            this.rdTriArea.Name = "rdTriArea";
+            this.rdTriArea.Size = new System.Drawing.Size(122, 24);
+            this.rdTriArea.TabIndex = 37;
+            this.rdTriArea.TabStop = true;
+            this.rdTriArea.Tag = "1";
+            this.rdTriArea.Text = "พื้นที่สามเหลี่ยม";
+            this.rdTriArea.UseVisualStyleBackColor = true;
             // 
-            // label9
+            // lbTriShow
             // 
-            this.label9.BackColor = System.Drawing.Color.Yellow;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(36, 246);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(736, 51);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "0.00";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbTriShow.BackColor = System.Drawing.Color.Yellow;
+            this.lbTriShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTriShow.ForeColor = System.Drawing.Color.Red;
+            this.lbTriShow.Location = new System.Drawing.Point(36, 246);
+            this.lbTriShow.Name = "lbTriShow";
+            this.lbTriShow.Size = new System.Drawing.Size(736, 51);
+            this.lbTriShow.TabIndex = 38;
+            this.lbTriShow.Text = "0.00";
+            this.lbTriShow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox6
+            // tbSideAngle
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox6.Location = new System.Drawing.Point(610, 68);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(162, 29);
-            this.textBox6.TabIndex = 35;
+            this.tbSideAngle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbSideAngle.Location = new System.Drawing.Point(610, 68);
+            this.tbSideAngle.Name = "tbSideAngle";
+            this.tbSideAngle.Size = new System.Drawing.Size(162, 29);
+            this.tbSideAngle.TabIndex = 35;
+            this.tbSideAngle.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRadius_KeyPress);
             // 
-            // textBox5
+            // tbTriHeight
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox5.Location = new System.Drawing.Point(326, 68);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(162, 29);
-            this.textBox5.TabIndex = 35;
+            this.tbTriHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbTriHeight.Location = new System.Drawing.Point(326, 68);
+            this.tbTriHeight.Name = "tbTriHeight";
+            this.tbTriHeight.Size = new System.Drawing.Size(162, 29);
+            this.tbTriHeight.TabIndex = 35;
+            this.tbTriHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRadius_KeyPress);
             // 
             // label13
             // 
@@ -497,13 +507,14 @@
             this.label13.TabIndex = 34;
             this.label13.Text = "ป้อนด้านตรงข้ามมุมฉาก";
             // 
-            // textBox4
+            // tbBase
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.textBox4.Location = new System.Drawing.Point(42, 68);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(162, 29);
-            this.textBox4.TabIndex = 35;
+            this.tbBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.tbBase.Location = new System.Drawing.Point(42, 68);
+            this.tbBase.Name = "tbBase";
+            this.tbBase.Size = new System.Drawing.Size(162, 29);
+            this.tbBase.TabIndex = 35;
+            this.tbBase.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRadius_KeyPress);
             // 
             // label12
             // 
@@ -581,34 +592,34 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.TextBox tbRadius;
+        private System.Windows.Forms.RadioButton rdCircleArea;
+        private System.Windows.Forms.RadioButton rdCircleRound;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lbCircleShow;
+        private System.Windows.Forms.Button btCalcel;
+        private System.Windows.Forms.Button btCircleCal;
+        private System.Windows.Forms.Button btRectCancel;
+        private System.Windows.Forms.Button btRectCal;
+        private System.Windows.Forms.RadioButton rdRectRound;
+        private System.Windows.Forms.RadioButton rdRectArea;
+        private System.Windows.Forms.Label lbRectShow;
+        private System.Windows.Forms.TextBox tbWidth;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbRectHeight;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Button btTriCancel;
+        private System.Windows.Forms.Button btTriCal;
+        private System.Windows.Forms.RadioButton rdTriRound;
+        private System.Windows.Forms.RadioButton rdTriArea;
+        private System.Windows.Forms.Label lbTriShow;
+        private System.Windows.Forms.TextBox tbBase;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbTriHeight;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbSideAngle;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Timer timer;
     }

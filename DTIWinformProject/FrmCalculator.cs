@@ -182,5 +182,10 @@ namespace DTIWinformProject
                 calNumber("^");
             }
         }
+
+        private void tbNum2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,41 +34,41 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.cbPen = new System.Windows.Forms.CheckBox();
+            this.cbPencil = new System.Windows.Forms.CheckBox();
+            this.cbRubber = new System.Windows.Forms.CheckBox();
+            this.cbRuler = new System.Windows.Forms.CheckBox();
+            this.cbBook = new System.Windows.Forms.CheckBox();
+            this.tbPen = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbBook = new System.Windows.Forms.TextBox();
+            this.tbPencil = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbRubber = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbRuler = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lbPen = new System.Windows.Forms.Label();
+            this.lbPencil = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lbRubber = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lbRuler = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.lbBook = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbbSale = new System.Windows.Forms.ComboBox();
             this.label20 = new System.Windows.Forms.Label();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.tslbUsername = new System.Windows.Forms.ToolStripLabel();
             this.tslbDateTime = new System.Windows.Forms.ToolStripLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.lbShowTotalPay = new System.Windows.Forms.Label();
+            this.btCancel = new System.Windows.Forms.Button();
+            this.btCalculate = new System.Windows.Forms.Button();
             this.btMainMenu = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.label23 = new System.Windows.Forms.Label();
@@ -97,7 +97,6 @@
             this.label2.TabIndex = 15;
             this.label2.Text = "จำนวน";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -119,70 +118,81 @@
             this.label4.Text = "คิดเป็นเงิน";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // checkBox1
+            // cbPen
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(108, 216);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(162, 28);
-            this.checkBox1.TabIndex = 18;
-            this.checkBox1.Text = "ปากกา 5 บาท/ด้าม";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.cbPen.AutoSize = true;
+            this.cbPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPen.Location = new System.Drawing.Point(108, 216);
+            this.cbPen.Name = "cbPen";
+            this.cbPen.Size = new System.Drawing.Size(162, 28);
+            this.cbPen.TabIndex = 18;
+            this.cbPen.TabStop = false;
+            this.cbPen.Text = "ปากกา 5 บาท/ด้าม";
+            this.cbPen.UseVisualStyleBackColor = true;
+            this.cbPen.Click += new System.EventHandler(this.cbPen_Click);
             // 
-            // checkBox2
+            // cbPencil
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(108, 282);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(172, 28);
-            this.checkBox2.TabIndex = 19;
-            this.checkBox2.Text = "ดินสอ 1.5 บาท/ด้าม";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.cbPencil.AutoSize = true;
+            this.cbPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPencil.Location = new System.Drawing.Point(108, 282);
+            this.cbPencil.Name = "cbPencil";
+            this.cbPencil.Size = new System.Drawing.Size(172, 28);
+            this.cbPencil.TabIndex = 19;
+            this.cbPencil.TabStop = false;
+            this.cbPencil.Text = "ดินสอ 1.5 บาท/ด้าม";
+            this.cbPencil.UseVisualStyleBackColor = true;
+            this.cbPencil.Click += new System.EventHandler(this.cbPencil_Click);
             // 
-            // checkBox3
+            // cbRubber
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(108, 348);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(187, 28);
-            this.checkBox3.TabIndex = 20;
-            this.checkBox3.Text = "ยางลบ 2.50 บาท/ก้อน";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.cbRubber.AutoSize = true;
+            this.cbRubber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRubber.Location = new System.Drawing.Point(108, 348);
+            this.cbRubber.Name = "cbRubber";
+            this.cbRubber.Size = new System.Drawing.Size(187, 28);
+            this.cbRubber.TabIndex = 20;
+            this.cbRubber.TabStop = false;
+            this.cbRubber.Text = "ยางลบ 2.50 บาท/ก้อน";
+            this.cbRubber.UseVisualStyleBackColor = true;
+            this.cbRubber.Click += new System.EventHandler(this.cbRubber_Click);
             // 
-            // checkBox4
+            // cbRuler
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(108, 414);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(177, 28);
-            this.checkBox4.TabIndex = 21;
-            this.checkBox4.Text = "ไม้บรรทัด 2 บาท/อัน";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.cbRuler.AutoSize = true;
+            this.cbRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRuler.Location = new System.Drawing.Point(108, 414);
+            this.cbRuler.Name = "cbRuler";
+            this.cbRuler.Size = new System.Drawing.Size(177, 28);
+            this.cbRuler.TabIndex = 21;
+            this.cbRuler.TabStop = false;
+            this.cbRuler.Text = "ไม้บรรทัด 2 บาท/อัน";
+            this.cbRuler.UseVisualStyleBackColor = true;
+            this.cbRuler.Click += new System.EventHandler(this.cbRuler_Click);
             // 
-            // checkBox5
+            // cbBook
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(108, 480);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(176, 28);
-            this.checkBox5.TabIndex = 22;
-            this.checkBox5.Text = "สมุด 10.25 บาท/เล่ม";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.cbBook.AutoSize = true;
+            this.cbBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBook.Location = new System.Drawing.Point(108, 480);
+            this.cbBook.Name = "cbBook";
+            this.cbBook.Size = new System.Drawing.Size(176, 28);
+            this.cbBook.TabIndex = 22;
+            this.cbBook.TabStop = false;
+            this.cbBook.Text = "สมุด 10.25 บาท/เล่ม";
+            this.cbBook.UseVisualStyleBackColor = true;
+            this.cbBook.Click += new System.EventHandler(this.cbBook_Click);
             // 
-            // textBox1
+            // tbPen
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(358, 214);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 24);
-            this.textBox1.TabIndex = 23;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPen.Location = new System.Drawing.Point(358, 214);
+            this.tbPen.MaxLength = 3;
+            this.tbPen.Name = "tbPen";
+            this.tbPen.Size = new System.Drawing.Size(100, 24);
+            this.tbPen.TabIndex = 1;
+            this.tbPen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPen_KeyPress);
+            this.tbPen.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbPen_KeyUp);
             // 
             // label6
             // 
@@ -194,25 +204,27 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "เล่ม";
             // 
-            // textBox2
+            // tbBook
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(358, 480);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 24);
-            this.textBox2.TabIndex = 25;
-            this.textBox2.Text = "0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBook.Location = new System.Drawing.Point(358, 480);
+            this.tbBook.MaxLength = 3;
+            this.tbBook.Name = "tbBook";
+            this.tbBook.Size = new System.Drawing.Size(100, 24);
+            this.tbBook.TabIndex = 5;
+            this.tbBook.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbBook_KeyPress);
+            this.tbBook.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbBook_KeyUp);
             // 
-            // textBox3
+            // tbPencil
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(358, 280);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 24);
-            this.textBox3.TabIndex = 23;
-            this.textBox3.Text = "0";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPencil.Location = new System.Drawing.Point(358, 280);
+            this.tbPencil.MaxLength = 3;
+            this.tbPencil.Name = "tbPencil";
+            this.tbPencil.Size = new System.Drawing.Size(100, 24);
+            this.tbPencil.TabIndex = 2;
+            this.tbPencil.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbPencil_KeyPress);
+            this.tbPencil.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbPencil_KeyUp);
             // 
             // label7
             // 
@@ -224,15 +236,16 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "บาท";
             // 
-            // textBox4
+            // tbRubber
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(358, 346);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 24);
-            this.textBox4.TabIndex = 23;
-            this.textBox4.Text = "0";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbRubber.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRubber.Location = new System.Drawing.Point(358, 346);
+            this.tbRubber.MaxLength = 3;
+            this.tbRubber.Name = "tbRubber";
+            this.tbRubber.Size = new System.Drawing.Size(100, 24);
+            this.tbRubber.TabIndex = 3;
+            this.tbRubber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRubber_KeyPress);
+            this.tbRubber.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbRubber_KeyUp);
             // 
             // label8
             // 
@@ -244,15 +257,16 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "ก้อน";
             // 
-            // textBox5
+            // tbRuler
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(358, 412);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 24);
-            this.textBox5.TabIndex = 23;
-            this.textBox5.Text = "0";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tbRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbRuler.Location = new System.Drawing.Point(358, 412);
+            this.tbRuler.MaxLength = 3;
+            this.tbRuler.Name = "tbRuler";
+            this.tbRuler.Size = new System.Drawing.Size(100, 24);
+            this.tbRuler.TabIndex = 4;
+            this.tbRuler.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbRuler_KeyPress);
+            this.tbRuler.KeyUp += new System.Windows.Forms.KeyEventHandler(this.tbRuler_KeyUp);
             // 
             // label9
             // 
@@ -284,29 +298,29 @@
             this.label11.TabIndex = 24;
             this.label11.Text = "ด้าม";
             // 
-            // label5
+            // lbPen
             // 
-            this.label5.BackColor = System.Drawing.Color.Yellow;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(559, 213);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(121, 24);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "0.00";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPen.BackColor = System.Drawing.Color.Yellow;
+            this.lbPen.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPen.ForeColor = System.Drawing.Color.Red;
+            this.lbPen.Location = new System.Drawing.Point(559, 213);
+            this.lbPen.Name = "lbPen";
+            this.lbPen.Size = new System.Drawing.Size(121, 24);
+            this.lbPen.TabIndex = 24;
+            this.lbPen.Text = "0.00";
+            this.lbPen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // label12
+            // lbPencil
             // 
-            this.label12.BackColor = System.Drawing.Color.Yellow;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(559, 276);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(121, 24);
-            this.label12.TabIndex = 24;
-            this.label12.Text = "0.00";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbPencil.BackColor = System.Drawing.Color.Yellow;
+            this.lbPencil.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPencil.ForeColor = System.Drawing.Color.Red;
+            this.lbPencil.Location = new System.Drawing.Point(559, 276);
+            this.lbPencil.Name = "lbPencil";
+            this.lbPencil.Size = new System.Drawing.Size(121, 24);
+            this.lbPencil.TabIndex = 24;
+            this.lbPencil.Text = "0.00";
+            this.lbPencil.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label13
             // 
@@ -318,17 +332,17 @@
             this.label13.TabIndex = 24;
             this.label13.Text = "บาท";
             // 
-            // label14
+            // lbRubber
             // 
-            this.label14.BackColor = System.Drawing.Color.Yellow;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(555, 344);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(121, 24);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "0.00";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbRubber.BackColor = System.Drawing.Color.Yellow;
+            this.lbRubber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRubber.ForeColor = System.Drawing.Color.Red;
+            this.lbRubber.Location = new System.Drawing.Point(555, 344);
+            this.lbRubber.Name = "lbRubber";
+            this.lbRubber.Size = new System.Drawing.Size(121, 24);
+            this.lbRubber.TabIndex = 24;
+            this.lbRubber.Text = "0.00";
+            this.lbRubber.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label15
             // 
@@ -340,17 +354,17 @@
             this.label15.TabIndex = 24;
             this.label15.Text = "บาท";
             // 
-            // label16
+            // lbRuler
             // 
-            this.label16.BackColor = System.Drawing.Color.Yellow;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(555, 410);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(121, 24);
-            this.label16.TabIndex = 24;
-            this.label16.Text = "0.00";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbRuler.BackColor = System.Drawing.Color.Yellow;
+            this.lbRuler.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRuler.ForeColor = System.Drawing.Color.Red;
+            this.lbRuler.Location = new System.Drawing.Point(555, 410);
+            this.lbRuler.Name = "lbRuler";
+            this.lbRuler.Size = new System.Drawing.Size(121, 24);
+            this.lbRuler.TabIndex = 24;
+            this.lbRuler.Text = "0.00";
+            this.lbRuler.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label17
             // 
@@ -362,17 +376,17 @@
             this.label17.TabIndex = 24;
             this.label17.Text = "บาท";
             // 
-            // label18
+            // lbBook
             // 
-            this.label18.BackColor = System.Drawing.Color.Yellow;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(555, 482);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(121, 24);
-            this.label18.TabIndex = 24;
-            this.label18.Text = "0.00";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbBook.BackColor = System.Drawing.Color.Yellow;
+            this.lbBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBook.ForeColor = System.Drawing.Color.Red;
+            this.lbBook.Location = new System.Drawing.Point(555, 482);
+            this.lbBook.Name = "lbBook";
+            this.lbBook.Size = new System.Drawing.Size(121, 24);
+            this.lbBook.TabIndex = 24;
+            this.lbBook.Text = "0.00";
+            this.lbBook.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label19
             // 
@@ -384,14 +398,19 @@
             this.label19.TabIndex = 24;
             this.label19.Text = "ส่วนลด";
             // 
-            // comboBox1
+            // cbbSale
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(358, 533);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 32);
-            this.comboBox1.TabIndex = 27;
+            this.cbbSale.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbSale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbSale.FormattingEnabled = true;
+            this.cbbSale.Items.AddRange(new object[] {
+            "ส่วนลด 5%",
+            "ส่วนลด 10%",
+            "ส่วนลด 15%"});
+            this.cbbSale.Location = new System.Drawing.Point(358, 533);
+            this.cbbSale.Name = "cbbSale";
+            this.cbbSale.Size = new System.Drawing.Size(121, 32);
+            this.cbbSale.TabIndex = 6;
             // 
             // label20
             // 
@@ -436,10 +455,10 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.lbShowTotalPay);
             this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btCancel);
+            this.groupBox1.Controls.Add(this.btCalculate);
             this.groupBox1.Location = new System.Drawing.Point(93, 585);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(862, 141);
@@ -456,43 +475,45 @@
             this.label21.TabIndex = 24;
             this.label21.Text = "รวมเป็นเงินทั้งสิ้น";
             // 
-            // label22
+            // lbShowTotalPay
             // 
-            this.label22.BackColor = System.Drawing.Color.Yellow;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.Red;
-            this.label22.Location = new System.Drawing.Point(237, 51);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(166, 53);
-            this.label22.TabIndex = 24;
-            this.label22.Text = "0.00";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbShowTotalPay.BackColor = System.Drawing.Color.Yellow;
+            this.lbShowTotalPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbShowTotalPay.ForeColor = System.Drawing.Color.Red;
+            this.lbShowTotalPay.Location = new System.Drawing.Point(237, 51);
+            this.lbShowTotalPay.Name = "lbShowTotalPay";
+            this.lbShowTotalPay.Size = new System.Drawing.Size(166, 53);
+            this.lbShowTotalPay.TabIndex = 24;
+            this.lbShowTotalPay.Text = "0.00";
+            this.lbShowTotalPay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // button2
+            // btCancel
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::DTIWinformProject.Properties.Resources.cancel1;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(672, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(152, 86);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "ยกเลิก";
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.btCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCancel.Image = global::DTIWinformProject.Properties.Resources.cancel1;
+            this.btCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCancel.Location = new System.Drawing.Point(672, 35);
+            this.btCancel.Name = "btCancel";
+            this.btCancel.Size = new System.Drawing.Size(152, 86);
+            this.btCancel.TabIndex = 8;
+            this.btCancel.Text = "ยกเลิก";
+            this.btCancel.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCancel.UseVisualStyleBackColor = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
-            // button1
+            // btCalculate
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Image = global::DTIWinformProject.Properties.Resources.calculator2;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(493, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 86);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "คำนวณ";
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = true;
+            this.btCalculate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btCalculate.Image = global::DTIWinformProject.Properties.Resources.calculator2;
+            this.btCalculate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCalculate.Location = new System.Drawing.Point(493, 35);
+            this.btCalculate.Name = "btCalculate";
+            this.btCalculate.Size = new System.Drawing.Size(152, 86);
+            this.btCalculate.TabIndex = 7;
+            this.btCalculate.Text = "คำนวณ";
+            this.btCalculate.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btCalculate.UseVisualStyleBackColor = true;
+            this.btCalculate.Click += new System.EventHandler(this.btCalculate_Click);
             // 
             // btMainMenu
             // 
@@ -502,7 +523,7 @@
             this.btMainMenu.Location = new System.Drawing.Point(802, 37);
             this.btMainMenu.Name = "btMainMenu";
             this.btMainMenu.Size = new System.Drawing.Size(224, 86);
-            this.btMainMenu.TabIndex = 14;
+            this.btMainMenu.TabIndex = 0;
             this.btMainMenu.Text = "หน้าจอหลัก";
             this.btMainMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btMainMenu.UseVisualStyleBackColor = true;
@@ -529,9 +550,9 @@
             this.ClientSize = new System.Drawing.Size(1080, 766);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cbbSale);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbBook);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label11);
@@ -542,20 +563,20 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.lbBook);
+            this.Controls.Add(this.lbRuler);
+            this.Controls.Add(this.lbRubber);
+            this.Controls.Add(this.lbPencil);
+            this.Controls.Add(this.lbPen);
+            this.Controls.Add(this.tbRuler);
+            this.Controls.Add(this.tbRubber);
+            this.Controls.Add(this.tbPencil);
+            this.Controls.Add(this.tbPen);
+            this.Controls.Add(this.cbBook);
+            this.Controls.Add(this.cbRuler);
+            this.Controls.Add(this.cbRubber);
+            this.Controls.Add(this.cbPencil);
+            this.Controls.Add(this.cbPen);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -584,41 +605,41 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox cbPen;
+        private System.Windows.Forms.CheckBox cbPencil;
+        private System.Windows.Forms.CheckBox cbRubber;
+        private System.Windows.Forms.CheckBox cbRuler;
+        private System.Windows.Forms.CheckBox cbBook;
+        private System.Windows.Forms.TextBox tbPen;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbBook;
+        private System.Windows.Forms.TextBox tbPencil;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbRubber;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbRuler;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbPen;
+        private System.Windows.Forms.Label lbPencil;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbRubber;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbRuler;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lbBook;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbbSale;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripLabel tslbUsername;
         private System.Windows.Forms.ToolStripLabel tslbDateTime;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label lbShowTotalPay;
+        private System.Windows.Forms.Button btCalculate;
+        private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.Label label23;
     }
