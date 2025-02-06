@@ -12,6 +12,15 @@ namespace DTIWinformProject
         // ต้องใช้ static เพื่อให้สามารถเรียกใช้ได้โดยไม่ต้องสร้าง instance ของคลาสนี้
         public static string LoginName;
         public static string LoginType;
+
+        public static string pictureName;
+        public static string dateRegis;
+        public static string noRegis;
+        public static string nameRegis;
+        public static string typeRegis;
+        public static string levelRegis;
+        public static string subjectRegisItems;
+        public static List<string> subjectRegisItemsShow = new List<string>();
         public static void showWarningMSG(string msg)
         {
             MessageBox.Show(msg, "คำเตือน", MessageBoxButtons.OK, MessageBoxIcon.Warning);

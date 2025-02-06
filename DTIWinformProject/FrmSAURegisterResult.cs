@@ -17,14 +17,23 @@ namespace DTIWinformProject
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void FrmSAURegisterResult_Load(object sender, EventArgs e)
         {
+            pbImageRegisShow.Image = new Bitmap(ShareData.pictureName);
+            lbDateShow.Text = ShareData.dateRegis;
+            lbNoShow.Text = ShareData.noRegis;
+            lbNameShow.Text = ShareData.nameRegis;
+            lbLevelShow.Text = ShareData.levelRegis;
+            lbtypeShow.Text = ShareData.typeRegis;
+            lbSubjectShow.Text = ShareData.subjectRegisItems;
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void btOk_Click(object sender, EventArgs e)
         {
-
+            FrmSAURegister frmSAURegister = new FrmSAURegister();
+            frmSAURegister.Show();
+            Hide();
         }
     }
 }
